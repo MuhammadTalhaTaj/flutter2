@@ -19,7 +19,7 @@ class SignInPage extends StatelessWidget {
               'Welcome Back!',
               style: TextStyle(fontWeight: FontWeight.bold, fontSize: 27),
             ),
-            Text('Please, sign in to continue'),
+            Text('Please, sign in to continue',style: TextStyle(color: Colors.grey),),
             SizedBox(height: 24.0),
             CustomTextField(
               text: 'Sales ID number',
@@ -49,7 +49,7 @@ class SignInPage extends StatelessWidget {
           Container(
 
                 width: double.infinity,
-                child: Center(child: Text('or')),
+                child: Center(child: Text('or',style: TextStyle(color: Colors.grey),)),
               ),
 
 
@@ -57,7 +57,7 @@ class SignInPage extends StatelessWidget {
             SizedBox(height: 12.0),
 
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                  CustomElevatedButton(),
 
@@ -83,7 +83,7 @@ class SignInPage extends StatelessWidget {
             ),
             Container(
               child: Center(
-                child: Text("Don't have an account? Go the Registration"),
+                child: Text("Don't have an account? Go the Registration",style: TextStyle(color: Colors.grey),),
               ),
             ),
           ],

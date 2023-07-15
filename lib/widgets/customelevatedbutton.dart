@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends StatelessWidget {
-  const CustomElevatedButton({Key? key}) : super(key: key);
+  final Icon icon;
+  final text;
+  const CustomElevatedButton({Key? key, required this.icon, this.text}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class CustomElevatedButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Icon(
-            Icons.facebook,
+            Icons.chrome,
             color: Colors.blue,
           ),
           SizedBox(width: 5),
