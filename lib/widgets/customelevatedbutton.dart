@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends StatelessWidget {
-  final Icon icon;
+  final IconData icon;
   final text;
   const CustomElevatedButton({Key? key, required this.icon, this.text}) : super(key: key);
 
@@ -20,14 +20,14 @@ class CustomElevatedButton extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Icon(
-            Icons.chrome,
+            icon,
             color: Colors.blue,
           ),
           SizedBox(width: 5),
           Text(
-            'Sign up with Google',
+            text,
             style: TextStyle(
-                color: Colors.black, fontSize: 13),
+                color: Colors.black, fontSize: 11,fontWeight: FontWeight.bold),
           )
         ],
       ),

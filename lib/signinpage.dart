@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:untitled/widgets/customelevatedbutton.dart';
 import 'package:untitled/widgets/customtextfield.dart';
 
+
+
 class SignInPage extends StatelessWidget {
   const SignInPage({Key? key}) : super(key: key);
 
@@ -56,16 +58,26 @@ class SignInPage extends StatelessWidget {
 
             SizedBox(height: 12.0),
 
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                 CustomElevatedButton(),
-
-                SizedBox(
-                  width: 5,
+            Center(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  maxWidth: 350
                 ),
-                 CustomElevatedButton(),
-              ],
+                child: Container(
+
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                       CustomElevatedButton(icon: Icons.facebook,text: 'Sign up with Facebook',),
+
+                      SizedBox(
+                        width: 5,
+                      ),
+                       CustomElevatedButton(icon: Icons.g_mobiledata_rounded,text: 'Sign up with Google',),
+                    ],
+                  ),
+                ),
+              ),
             ),
             SizedBox(
               height: 17,
